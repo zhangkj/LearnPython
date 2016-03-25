@@ -7,5 +7,5 @@
     os.path.pardir是父目录
     os.path.abspath是绝对路径
 
-3.Python标准库：正则表达式、时间与日期
+3.Python标准库：正则表达式、时间与日期、存储对象
     文档见Docs文件夹，

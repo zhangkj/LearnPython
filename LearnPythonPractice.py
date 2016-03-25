@@ -42,5 +42,31 @@ delta2 = datetime.timedelta(weeks=3)
 format ="output-%Y-%m-%d-%H%M%S.txt"   #此处小写y会报错
 strtime = "output-1997-12-23-030000.txt"
 t3 = datetime.datetime.strptime(strtime,format)#用格式化读取的方式读取时间信息。
-print t+delta1,t+delta2,t-t2
-print t3,t2.strftime(format)          #datetime对象的strftime()方法，来将datetime对象转换为特定格式的字符串。
+#print t+delta1,t+delta2,t-t2
+#print t3,t2.strftime(format)          #datetime对象的strftime()方法，来将datetime对象转换为特定格式的字符串。
+
+
+
+#===================标准库：存储对象（pickle包，cpickle包）
+#包括1.将内存中的对象转换成文本流；2.重建对象；
+import pickle
+class Bird(object):
+    have_father = True
+    way_of_reproduction = 'egg'
+'''
+summer = Bird()
+picklestring = pickle.dumps(summer) #使用pickle.dumps()方法可以将对象summer转换成了字符串 picklestring(也就是文本流)
+writef = open('txtwrite.txt','w')
+writef.write(picklestring)
+fn = 'a.pkl'
+
+with open(fn,'w') as f:
+    picklestring = pickle.dump(summer,f) #使用pickle.dump()的方法，将上面两部合二为一,对象summer存储在文件a.pkl
+with open(fn,'r') as f2:
+    summer2 = pickle.load(f2)            #使用pickle.loads(str)的方法，将字符串转换成为对象
+    #print summer2.have_father
+'''
+
+#=================标准库：子进程（subprocess包）
+
+
