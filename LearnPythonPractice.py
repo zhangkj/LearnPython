@@ -24,7 +24,7 @@ m3 =re.findall(regex,strText)  #re.findall可以获取字符串中所有匹配�
 m4= re.split(regex,strText)    ## 根据正则表达式分割字符串， 将分割后的所有子字符串放在一个表(list)中返回
 m5 =re.sub(regex,"a",strText)
 
-#print m1.group(0),m1.group(1),m2.group(0),m2.group(1),m3,m4,m5
+print m1.group(0),m1.group(1),m2.group(0),m2.group(1),m3,m4,m5
 
 
 #===============标准库：time，datetime 时间与日期
